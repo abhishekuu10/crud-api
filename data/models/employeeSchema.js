@@ -8,11 +8,17 @@ module.exports = (sequelize, Sequelize) => {
           autoIncrement:true,
           primaryKey: true
       },
-      salary: {
+       salary: {
         type: Sequelize.INTEGER
       },
-        bloodgroup: {
-          type:Sequelize.STRING(3)
+      bloodgroup: {
+        type: Sequelize.STRING(3)
+      },
+      age: {
+        type:Sequelize.INTEGER
+      },
+      gender: {
+        type:Sequelize.STRING(6)
       }
     });
     return Employee;
